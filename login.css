@@ -1,0 +1,135 @@
+*{
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color:#593093;
+
+}
+
+.row{
+    display:flex;
+    flex-direction:row;
+    clear:both;
+    /* Using a default of no-wrap */
+}
+
+.row-sc{
+    display:flex;
+    flex-flow:row wrap;
+    clear:both;
+
+}
+
+.col-{
+    flex-basis:100%;
+}
+
+div {
+    border:0px solid black;
+}
+
+.header{
+    background-color:#f9c535;
+    color:#593093;
+    height:40px;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    text-align:center;
+}
+
+li a{
+    text-decoration:none;
+    color:#593093;
+    line-height:35px;
+    font-weight:bold;
+}
+
+.signin, .signup{
+    margin-top:25px;
+}
+
+.signin p{
+    color:#f9c535;
+    text-align:center;
+}
+
+
+.signin-info{
+    background-color:#f9c535;
+    height:200px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:5px;
+}
+
+.signin-info p, .signup-info p{
+    text-align:center;
+    color:#593093;
+    font-weight:bolder;
+    font-size:1em;
+}
+
+.signin-info input[type="text"], .signin-info input[type="password"], .signup-info input[type="text"], 
+.signup-info input[type="password"], .signup-info input[type="email"], .signup-info input[type="radio"]{
+    padding:4px;
+    border:1px solid #593093;
+    border-radius:4px;
+}
+
+.signin-info input[type="submit"], .signup-info input[type="submit"]{
+    display:block;
+    margin:auto;
+    padding:5px;
+    background-color:#593093;
+    color:#f9c535;
+    font-weight:bold;
+    border:1px solid #f9c535;
+    border-radius:4px;
+}
+
+.signup-info{
+    background-color:#f9c535;
+    height:400px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:5px;
+}
+
+#signin{
+    display:block;
+}
+
+#signup{
+    display:none;
+}
+
+
+
+@media screen and (min-width:768px){
+   
+
+    .signin-info, .signup-info{
+        width:50%;
+    }
+}
+
+
+
+
+@media screen and (min-width:1440px){
+   
+
+    .signin-info, .signup-info{
+        width:30%;
+    }
+}

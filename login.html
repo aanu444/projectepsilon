@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Into E-commerce Site</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col- header">
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row" id="signin">
+        <div class="col- signin">
+            <div class="col- signin-info">
+                <form action="#" method="POST">
+                    <p> Username/Email: <br>
+                    <input type="text" name="username" required></p>
+                    <p> Password: <br>
+                    <input type="password" name="password" required> </p>
+                    <input type="submit" value="Log In" id="bttn">
+                </form>
+            </div>
+            <p>Forgot Your Password? <span style="color:white;">Click Here</span></p>
+            <p>Don't Have An Account? <span id="nosignin" style="color:white;"> Sign Up Here</span></p>
+        </div>
+    </div>
+
+    <div class="row" id="signup">
+        <div class="col- signup">
+            <div class="col- signup-info">
+                <form action="signupsuccess.html" method="POST">
+                    <p> Full Name: <br>
+                        <input type="text" name="fullname" required></p>
+                    <p> Username <br>
+                        <input type="text" name="username" required></p>
+                    <p> Email <br>
+                        <input type="email" name="email" required></p>
+                    <p> Password: <br>
+                        <input type="password" name="password0" required></p>
+                    <p> Retype Password: <br>
+                        <input type="password" name="password1" required></p>
+                    <p> <input type="radio" name="customertype" value="buyer"> Buyer 
+                        <input type="radio" name="customertype" value="seller"> Seller  </p>
+                    <input type="submit" value="Sign Up">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
